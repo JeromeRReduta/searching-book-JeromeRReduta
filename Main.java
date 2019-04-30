@@ -1,13 +1,14 @@
 import java.util.ArrayList;
 
-public class Main {
-
-    public static void main(String[] args) {
-	     Book a = new Book("Hello", 12);
-	     Book b = new Book("Bye", 13);
-	     Book c = new Book("Zoo", 1);
-	     Book d = new Book("Alpha", 5);
-	     Book e = new Book("Bravo", 7);
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+	Book a = new Book("Hello", 12);
+	Book b = new Book("Bye", 13);
+	Book c = new Book("Zoo", 1);
+	Book d = new Book("Alpha", 5);
+	Book e = new Book("Bravo", 7);
 
         ArrayList<Book> library1 = new ArrayList<Book>();
         library1.add(a);
@@ -17,7 +18,7 @@ public class Main {
         library1.add(e);
 
         System.out.println(library1);
-        System.out.println("linear "+linearSearch(library1, new Book("Alpha", 1)));
+        System.out.println("linear "+linearSearch(library1, new Book("Alpha", 1))+"\n\n");
 
         ArrayList<Book> library2 = new ArrayList<Book>();
         library2.add(c);
